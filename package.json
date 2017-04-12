@@ -1,8 +1,30 @@
 {
-    "name": "NodeJsCompanyWorker",
-    "version": "1.0.0",
-    "keywords": ["util", "functional", "server", "client", "browser"],
-    "author": "Sergio Medina",
-    "contributors": [],
-    "dependencies": {}
+  "name": "veromo-edge_worker",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "Sergio Medina",
+  "contributors": [],
+  "dependencies": {},
+  "description": "Veromo NodeJS ASIC-EDGE Worker",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aquitania99/NodeJS-SandBox.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aquitania99/NodeJS-SandBox/issues"
+  },
+  "homepage": "https://github.com/aquitania99/NodeJS-SandBox#readme"
 }

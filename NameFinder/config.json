@@ -1,0 +1,10 @@
+{
+    "wsdl": "https://www.gateway.uat.asic.gov.au/gateway/ExternalQueryNameAvailabilityPortV2?WSDL",
+    "wsdl_lodge": "https://www.gateway.uat.asic.gov.au/gateway/ExternalBz1Port?WSDL",
+    "wsdl_check_bsns": "https://www.gateway.uat.asic.gov.au/gateway/ExternalSearchNniNamePortV2?WSDL",
+    "wsdl_address": "https://www.gateway.uat.asic.gov.au/gateway/ExternalQueryAddressPort?WSDL",
+    "username": "ASICM2MRA@VEROMO.COM.AU",
+    "password": "T0day12345",
+    "userId": "000040109",
+    "messageTypeLodge": "bnLodgeApplication"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "NodeJsCompanyWorker",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "Sergio Medina",
+    "contributors": [],
+    "dependencies": {}
+}

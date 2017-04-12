@@ -64,7 +64,8 @@ const decrypted = decrypt(encrypted, method, secret, hmac);
 console.log("Going to save to MongoDB....");
 let edgePassword = new Password({
   password: encrypted,
-  plainTxt: decrypted
+  plainTxt: decrypted,
+  created_at: Date()
 });
 
 edgePassword.save(function(err) {

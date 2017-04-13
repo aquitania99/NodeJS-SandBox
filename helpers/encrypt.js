@@ -10,6 +10,7 @@ function encrypt (message) {
     const encryptor = crypto.createCipheriv( config.password.method, config.edge.secret, iv);
     const encrypted = new Buffer(iv).toString('base64') + encryptor.update( message, 'utf8', 'base64') + encryptor.final('base64');
     hmac.value = crypto.createHmac('sha256',  config.edge.secret).update(encrypted).digest('hex');
+    console.log("HMAC... ",hmac.value);
     return encrypted;
 };
 

@@ -15,7 +15,7 @@ const passwordsSchema = new Schema({
 
 // make this available to our users in our Node applications
 const Password =  mongoose.model('passwords', passwordsSchema);
-const latestPwd = Password.find({});
+const latestPwd = Password.find({}).sort({createdOn: -1}).limit(1);
 
 const close = mongoose.connection.close();
 module.exports = Password;

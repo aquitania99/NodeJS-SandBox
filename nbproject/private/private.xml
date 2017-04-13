@@ -2,6 +2,14 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/devops/Code/NodeJ-Edge/edge/main.js</file>
+            <file>file:/home/devops/Code/NodeJ-Edge/edge/models/Password.js</file>
+            <file>file:/home/devops/Code/NodeJ-Edge/edge/passwd.js</file>
+            <file>file:/home/devops/Code/NodeJ-Edge/config/mongo.js</file>
+            <file>file:/home/devops/Code/NodeJ-Edge/edge/trim.js</file>
+            <file>file:/home/devops/Code/NodeJ-Edge/edge/passwd.dev</file>
+            <file>file:/home/devops/Code/NodeJ-Edge/edge/edge.js</file>
+        </group>
     </open-files>
 </project-private>

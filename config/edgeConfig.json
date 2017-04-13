@@ -1,0 +1,8 @@
+{
+    "name": "devops",
+    "edge_username": "A96452",
+    "edge_host1":  "edge1.asic.gov.au",
+    "edge_host2":  "edge2.asic.gov.au",
+    "edge_port": "5608",
+    "secret": "81ce0f72e7d7fc00c85ce31d6a0479e0"
+}

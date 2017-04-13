@@ -1,2 +1,1 @@
-// main.js
-require('./edge/main.js')
+const encrypt = require('helpers/encrypt');

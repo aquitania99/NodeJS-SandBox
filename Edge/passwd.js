@@ -1,5 +1,5 @@
 'use strict';
-let Password = require('./models/password');
+const Password = require('./models/password');
 const encrypt = require('../helpers/encrypt');
 const decrypt = require('../helpers/decrypt');
 
@@ -13,17 +13,19 @@ const decrypted = decrypt(encrypted);
 
 // console.log("Going to write into existing file");
 console.log("Saving " + decrypted + " to MongoDB....");
-let edgePassword = new Password({
+let EdgePassword = new Password({
   password: encrypted,
   plainTxt: decrypted
 });
 
-edgePassword.save(function(err) {
+EdgePassword.save(function(err) {
   if(err) throw err;
   console.log('Password saved successfully....');
 });
-console.log(edgePassword.latestPwd);
-edgePassword.close;
+
+console.log('Testing stuff...',EdgePassword.getPassword);
+
+EdgePassword.close;
 // console.log("Dev: ", config.name);
 // console.log("edgeUser: ", config.edge_username);
 // console.log("edgeServer: ", config.edge_host1);

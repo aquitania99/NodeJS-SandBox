@@ -1,5 +1,3 @@
-// grab the things we need
-// const mongoose = require('../../config/mongo');
 const mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 mongoose.connect('mongodb://localhost/sandbox');
@@ -12,10 +10,15 @@ const passwordsSchema = new Schema({
   plainTxt: String,
   createdOn: { type: Date, default: Date.now }
 });
+let passwordQuery = mongoose.model('Password', passwordsSchema).find({}).sort({createdOn:-1}).limit(1).select('password -_id');
+let getPassword = passwordQuery.exec();
+
+getPassword.then((data) => {
+  return data
+});
 
 // make this available to our users in our Node applications
-const Password =  mongoose.model('passwords', passwordsSchema);
-const latestPwd = Password.find({}).sort({createdOn: -1}).limit(1);
-
+//const Password =  mongoose.model('passwords', passwordsSchema);
+//console.log('Reading password LES OutSide... ',res);
 const close = mongoose.connection.close();
-module.exports = Password;
+module.exports = mongoose.model('Password', passwordsSchema);;
